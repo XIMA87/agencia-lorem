@@ -35,16 +35,16 @@ html {
 }
 
 .cabecalho {
-    display: flex; /*por padrão já é row então não é necessario usar flex-direction*/
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
     max-width: 1170px;
     margin: 0 auto;
-    flex-wrap: wrap; /*quebra o conteudo para baixo em telas pequenas ?*/
+    flex-wrap: wrap;
 }
 
-@media(max-width: 624px) { /*media query para responsividade em telas menor. Funciona como se fosse um If*/
+@media(max-width: 624px) { 
     .cabecalho {
         justify-content: center;
     }
@@ -98,10 +98,9 @@ html {
     justify-content: center;
     align-items: center;
     height: 700px;
-    position: relative; /*Use relative no pai e absolute no container filho*/
-}
+    position: relative;
 
-@media(max-width: 900px) { /*media query para responsividade em telas menor. Funciona como se fosse um If*/
+@media(max-width: 900px) { 
    .conteudo-principal .paineis {
        height: 500px;
    }
@@ -113,8 +112,8 @@ html {
     background-position: center;
     min-width: 100%;
     height: 100%;
-    position: absolute; /*Usar sempre position absolute dentro de um container pai com position relative*/
-    z-index: -1; /*Define profundidade*/
+    position: absolute; 
+    z-index: -1; 
     filter: brightness(70%);
     font-size: 20px;
 
@@ -122,7 +121,7 @@ html {
     transition: 0.3s ease-in-out;
 }
 
-.conteudo-principal .paineis .imagem-painel.mostrar { /*Quando se tem varias classes no mesmo "nivel" no html, para estilizar uma especifica, não separe com espaço ou estará dizendo que ela está dentro de uma hierarquia.*/
+.conteudo-principal .paineis .imagem-painel.mostrar { 
     opacity: 1;
 }
 
@@ -141,7 +140,7 @@ html {
 .conteudo-principal .paineis .titulo {
     color: white;
     text-transform: uppercase;
-    font-size: calc(1em + 1vw); /*Calcular font-size de acordo com o tamanho da tela*/
+    font-size: calc(1em + 1vw);
 }
 
 .conteudo-principal .paineis .seta {
@@ -152,16 +151,16 @@ html {
     width: 50px;
     height: 50px;
     position: absolute;
-    text-indent: 100%; /*esconder texto de um elemento*/
-    overflow: hidden;  /*esconder texto de um elemento*/
+    text-indent: 100%; 
+    overflow: hidden; 
 }
 
-.conteudo-principal .paineis .seta.btn-voltar { /*Quando se tem varias classes no mesmo "nivel" no html, para estilizar uma especifica, não separe com espaço ou estará dizendo que ela está dentro de uma hierarquia.*/
+.conteudo-principal .paineis .seta.btn-voltar { 
     left: 20px;
     transform: rotateY(180deg);
 }
 
-.conteudo-principal .paineis .seta.btn-avancar { /*Quando se tem varias classes no mesmo "nivel" no html, para estilizar uma especifica, não separe com espaço ou estará dizendo que ela está dentro de uma hierarquia.*/
+.conteudo-principal .paineis .seta.btn-avancar { 
     right: 20px;
     
 }
@@ -175,7 +174,7 @@ html {
 .quem-somos .conteudo {
     display: flex;
     align-items: center;
-    padding: 0 10%; /*Usar medida relativa como 10% ajuda a ajustar melhor o site me telas menores*/
+    padding: 0 10%; 
 }
 
 .quem-somos .conteudo .informacoes {
@@ -199,7 +198,7 @@ html {
     font-weight: 400;
 }
 
-@media(max-width: 1200px) { /*media query para responsividade em telas menor. Funciona como se fosse um If*/
+@media(max-width: 1200px) { 
     .quem-somos .conteudo {
         flex-direction: column;
         text-align: center;
@@ -257,7 +256,7 @@ html {
     text-align: center;
 }
 
-@media(max-width: 940px) { /*media query para responsividade em telas menor. Funciona como se fosse um If*/
+@media(max-width: 940px) { 
     .rodape .navegacao {
         justify-content: center;
     }
